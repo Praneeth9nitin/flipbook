@@ -3,4 +3,4 @@ flask-cors
 pdf2image
 poppler-utils
 gunicorn
-pilloow
+pillow
