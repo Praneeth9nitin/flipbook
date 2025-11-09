@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import HTMLFlipBook from "react-pageflip";
 import axios from "axios";
 
@@ -13,7 +13,7 @@ const PdfFlipbook = () => {
     const formData = new FormData();
     formData.append("pdf", file);
 
-    const res = await axios.post("http://localhost:5000/upload", formData);
+    const res = await axios.post("https://flipbook-olz1.onrender.com/upload", formData);
     setLoading(false)
     setImages(res.data.images);
   };
